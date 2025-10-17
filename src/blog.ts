@@ -16,7 +16,7 @@ const Blogs: Blog[] = [
     image: "/images/compsci_blog.jpg",
     imageAlt:
       "A picture of my workstation showing a computer, engineering project, and Monster energy drink.",
-    slug: "path",
+    slug: "/blogs/comp-sci-journey.html",
   },
   {
     title: "FINALLY! A Creative Hobby: Guitar.",
@@ -25,7 +25,7 @@ const Blogs: Blog[] = [
       "Read about how I, a young man who swore he had no creative side of his brain, grew a love for one of the most creativity-requiring hobbies; guitar playing.",
     image: "/images/guitar_blog.jpg",
     imageAlt: "A picture of me playing a baby guitar in guitar center",
-    slug: "path",
+    slug: "/blogs/guitar.html",
   },
 ];
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const blogContainer = document.querySelector("#blog-container");
 
     const blogPost = document.createElement("div");
-    blogPost
+    blogPost;
     const title = document.createElement("h1");
     const image = document.createElement("img");
     const description = document.createElement("p");
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     image.src = blog.image;
     image.alt = blog.imageAlt;
     description.textContent = blog.description;
+
+    blogPost.classList.add("blog-post");
 
     blogPost.append(title, image, description);
     if (blogContainer) blogContainer.appendChild(blogPost); // Thanks to Emmy in the Discord for this line of code, without checking first if blogContainer exists, error will pop up.
