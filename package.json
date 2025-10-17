@@ -17,7 +17,7 @@
     "url": "https://github.com/eolozagaste/bootcamp-project-2025/issues"
   },
   "homepage": "https://github.com/eolozagaste/bootcamp-project-2025#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5.9.3"
   }
 }

@@ -262,3 +262,13 @@ form {
   width: 100%;
   height: 2.5rem;
 }
+
+/* CSS for blog page */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid var(--cg-black);
+
+}
